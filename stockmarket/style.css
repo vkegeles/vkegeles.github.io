@@ -1,0 +1,119 @@
+.container {
+  width: 70%;
+}
+
+.form-control {
+  font-size: 1rem;
+  line-height: 1.375;
+  width: 100%;
+  height: 3.625rem;
+  border: 0.125rem solid #0090ba;
+  padding: 1rem 1.25rem;
+  color: #0090ba;
+
+}
+
+mark {
+  padding: 0;
+  background-color: #68a8bb;
+}
+
+.card {
+  min-width: 150px;
+  max-width: 250px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.green {
+  color: green;
+}
+
+.green-light {
+  color: greenyellow;
+}
+
+.red {
+  color: red;
+}
+
+.logo {
+  max-width: 100px;
+  width: auto;
+}
+
+.marquee {
+  height: 2rem;
+  background-blend-mode: normal, normal, overlay, overlay, normal, normal, normal, normal;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(301deg, rgba(44, 34, 150, 0), #7b2297), linear-gradient(rgba(0, 82, 154, 0.95), rgba(0, 82, 154, 0.95)), linear-gradient(121deg, rgba(109, 180, 62, 0), #6db43e), linear-gradient(238deg, rgba(173, 32, 142, 0), #ad208e), linear-gradient(42deg, rgba(0, 190, 213, 0), rgba(0, 190, 213, 0.85) 85%, rgba(0, 190, 213, 0.87) 87%, #00bed5), linear-gradient(126deg, rgba(0, 190, 213, 0), #00bed5), linear-gradient(#594099, #594099);
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-div {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-div-delay {
+  display: inline-block;
+  animation: marquee2 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee2 {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .card-columns {
+    column-count: 4;
+  }
+}
+
+
+@media screen and (min-width:1600px) {
+  .card-columns {
+    column-count: 5;
+  }
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(301deg, rgba(44, 34, 150, 0), #7b2297), linear-gradient(rgba(0, 82, 154, 0.95), rgba(0, 82, 154, 0.95)), linear-gradient(121deg, rgba(109, 180, 62, 0), #6db43e), linear-gradient(238deg, rgba(173, 32, 142, 0), #ad208e), linear-gradient(42deg, rgba(0, 190, 213, 0), rgba(0, 190, 213, 0.85) 85%, rgba(0, 190, 213, 0.87) 87%, #00bed5), linear-gradient(126deg, rgba(0, 190, 213, 0), #00bed5), linear-gradient(#594099, #594099);
+  color: white;
+}
